@@ -263,7 +263,7 @@ Click **"Demo for Guide"** on the login page to explore with sample data.
 
 ## 📄 License
 
-This project is developed as a **Final Year Project (2026)** — Department of Computer Science.
+This project is developed as a *ALIBABA AI HACKATHON**.
 
 ---
 
