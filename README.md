@@ -1,8 +1,9 @@
 <div align="center">
 
-# 💰 WealthWise AI
+# <img width="843" height="460" alt="image" src="https://github.com/user-attachments/assets/d97f8ed9-7af9-4375-8303-a645bd3a4822" />
+ WealthWise AI
 
-### *Apne Paise Ka Bhavishya Pehle Se Dekho*
+### *Make Today’s Money Decisions, Smarter for Tomorrow*
 
 **Pakistan's First AI-Powered Financial Digital Twin**
 
