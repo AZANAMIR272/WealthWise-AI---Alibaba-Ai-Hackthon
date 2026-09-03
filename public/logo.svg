@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d4a017"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Shield body -->
+  <path d="M256 40 L440 120 L440 260 C440 370 360 440 256 480 C152 440 72 370 72 260 L72 120 Z" fill="url(#shieldGrad)"/>
+  
+  <!-- Shield highlight -->
+  <path d="M256 56 L424 130 L424 258 C424 358 352 424 256 462 C160 424 88 358 88 258 L88 130 Z" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="3"/>
+  
+  <!-- Islamic 8-pointed star at top -->
+  <g transform="translate(256,130)" opacity="0.3">
+    <polygon points="0,-40 12,-12 40,0 12,12 0,40 -12,12 -40,0 -12,-12" fill="white"/>
+    <polygon points="0,-28 28,-28 28,0 28,28 0,28 -28,28 -28,0 -28,-28" fill="white" transform="rotate(45)"/>
+  </g>
+  
+  <!-- Upward trend line (wealth growth) -->
+  <polyline points="130,340 185,310 230,330 290,260 340,220 390,160" fill="none" stroke="white" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+  
+  <!-- Trend line shadow -->
+  <polyline points="130,340 185,310 230,330 290,260 340,220 390,160" fill="none" stroke="rgba(0,0,0,0.15)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="130,340 185,310 230,330 290,260 340,220 390,160" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Arrow tip at end of trend -->
+  <polygon points="390,160 370,175 380,155" fill="white" opacity="0.9"/>
+  <polygon points="390,160 368,148 382,168" fill="white" opacity="0.9"/>
+  
+  <!-- Gold coin/dot accents -->
+  <circle cx="390" cy="155" r="10" fill="url(#goldGrad)" filter="url(#glow)"/>
+  <circle cx="130" cy="340" r="7" fill="url(#goldGrad)" opacity="0.7"/>
+  <circle cx="290" cy="260" r="6" fill="url(#goldGrad)" opacity="0.5"/>
+  
+  <!-- Pakistani crescent at bottom -->
+  <g transform="translate(256,400)" opacity="0.25">
+    <circle cx="0" cy="0" r="22" fill="white"/>
+    <circle cx="6" cy="-3" r="18" fill="url(#shieldGrad)"/>
+    <polygon points="20,-5 23,2 17,6 24,6 19,10" fill="white"/>
+  </g>
+  
+  <!-- Shield border -->
+  <path d="M256 40 L440 120 L440 260 C440 370 360 440 256 480 C152 440 72 370 72 260 L72 120 Z" fill="none" stroke="url(#goldGrad)" stroke-width="5" opacity="0.6"/>
+</svg>
