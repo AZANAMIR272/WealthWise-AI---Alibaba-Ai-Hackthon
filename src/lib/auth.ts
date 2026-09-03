@@ -4,7 +4,7 @@ import { v4 as uuid } from 'uuid';
 import { queryAll, queryOne, queryRun } from './db';
 import { cookies } from 'next/headers';
 
-const JWT_SECRET = process.env.JWT_SECRET || 'wealthwise-ai-secret-key-2026-pak';
+const JWT_SECRET = process.env.JWT_SECRET || '';
 
 // ─── OTP Helpers ───────────────────────────────────────────
 export async function generateAndStoreOtp(email: string, purpose: 'register' | 'reset'): Promise<{ code: string; sent: boolean }> {

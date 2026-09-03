@@ -12,7 +12,7 @@ export function isValidAdminName(name: string): boolean {
 
 export function getAdminCredentials() {
   return {
-    email: process.env.ADMIN_EMAIL || 'admin@wealthwise.ai',
-    password: process.env.ADMIN_PASSWORD || 'WealthWiseAdmin@2026',
+    email: process.env.ADMIN_EMAIL || '',
+    password: process.env.ADMIN_PASSWORD || '',
   };
 }

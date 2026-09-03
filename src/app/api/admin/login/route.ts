@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import jwt from 'jsonwebtoken';
 import { getAdminCredentials } from '@/lib/admin-config';
 
-const JWT_SECRET = process.env.JWT_SECRET || 'wealthwise-ai-secret-key-2026-pak';
+const JWT_SECRET = process.env.JWT_SECRET || '';
 
 export async function POST(request: Request) {
   try {

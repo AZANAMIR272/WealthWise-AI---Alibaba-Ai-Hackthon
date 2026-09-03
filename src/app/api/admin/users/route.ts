@@ -3,7 +3,7 @@ import jwt from 'jsonwebtoken';
 import { v4 as uuid } from 'uuid';
 import { queryAll, queryOne, queryRun } from '@/lib/db';
 
-const JWT_SECRET = process.env.JWT_SECRET || 'wealthwise-ai-secret-key-2026-pak';
+const JWT_SECRET = process.env.JWT_SECRET || '';
 
 function verifyAdminToken(token: string): { adminName: string } | null {
   try {
